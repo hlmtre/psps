@@ -6,3 +6,7 @@ Function ln {
     )
     New-Item -ItemType Junction -Path $destination -Target $source
 }
+
+Function hs {
+    cat (Get-PSReadLineOption).HistorySavePath
+}
